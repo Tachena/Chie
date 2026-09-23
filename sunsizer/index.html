@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sun Sizer Pro</title>
+<meta name="description" content="An offline solar design toolkit for iPhone and iPad. String sizing, wiring and NEC code checks, sun path, production & ROI, and off-grid sizing, with no signal or account needed.">
+<meta property="og:title" content="Sun Sizer Pro: offline solar design toolkit">
+<meta property="og:description" content="Survey the site. Size the system. Everything works on the roof, with no signal and no account needed.">
+<meta property="og:image" content="img/site-and-sun.jpg">
+<style>
+:root{--bg1:#9FD0F2;--bg2:#3F7FC0;--card:rgba(255,255,255,.93);--ink:#16324f;--muted:#4c6480;--gold:#FFD95A;--gold-ink:#8a5a00;--line:rgba(22,50,79,.12);--glass:rgba(255,255,255,.16)}
+@media (prefers-color-scheme:dark){:root{--bg1:#1d3350;--bg2:#0b1626;--card:rgba(22,34,52,.93);--ink:#e8f0f8;--muted:#9fb3c8;--gold-ink:#FFD95A;--line:rgba(255,255,255,.12);--glass:rgba(255,255,255,.08)}}
+*{box-sizing:border-box}
+html{background:var(--bg2)}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:linear-gradient(175deg,var(--bg1) 0%,var(--bg2) 70%) no-repeat;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+nav.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:#fff}
+nav.top .brand{font-weight:700;text-decoration:none;display:flex;align-items:center;gap:10px}
+nav.top .brand i{font-style:normal;width:34px;height:34px;border-radius:9px;background:linear-gradient(150deg,#FFE27A,#F5B53D);display:grid;place-items:center}
+nav.top .links a{color:#fff;text-decoration:none;opacity:.9;margin-left:18px;font-size:15px}
+
+.hero{text-align:center;color:#fff;padding:36px 0 8px}
+.kicker{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.18em;color:var(--gold);border:1.5px solid rgba(255,217,90,.55);background:rgba(20,40,80,.25);padding:7px 16px;border-radius:999px}
+.hero h1{font-size:clamp(40px,8vw,76px);line-height:1.02;letter-spacing:-.03em;margin:20px 0 14px}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:clamp(18px,2.4vw,22px);max-width:640px;margin:0 auto;opacity:.95}
+.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 10px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:#0f1d30;color:#fff;text-decoration:none;padding:14px 24px;border-radius:14px;font-weight:600}
+.btn.ghost{background:var(--glass);border:1px solid rgba(255,255,255,.35)}
+.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+.pills span{background:var(--glass);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:14px;padding:6px 12px;border-radius:999px}
+
+.shots{display:flex;gap:18px;justify-content:safe center;margin:44px 0 10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 4px 18px}
+.shots img{flex:none;width:min(300px,72vw);height:auto;border-radius:26px;box-shadow:0 30px 60px rgba(8,20,45,.35);scroll-snap-align:center}
+
+section{margin:64px 0}
+.sec-title{text-align:center;color:#fff;margin-bottom:24px}
+.sec-title h2{font-size:clamp(28px,4.5vw,40px);letter-spacing:-.02em;margin:0 0 6px}
+.sec-title p{margin:0;opacity:.9}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px}
+.card{background:var(--card);border-radius:22px;padding:22px;box-shadow:0 18px 44px rgba(10,30,60,.16)}
+.card .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(150deg,#FFE27A,#F5B53D);display:grid;place-items:center;font-size:22px;margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.card li{margin:3px 0}
+
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+.split img{width:100%;height:auto;border-radius:22px;box-shadow:0 30px 60px rgba(8,20,45,.35)}
+.split .text{color:#fff}
+.split h2{font-size:clamp(28px,4.5vw,40px);letter-spacing:-.02em;margin:0 0 10px}
+.split ul{padding-left:20px}.split li{margin:6px 0}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.why .card{text-align:center}
+.why .big{font-size:34px;line-height:1;margin-bottom:8px}
+
+.price{text-align:center}
+.price .card{max-width:620px;margin:0 auto}
+.price h2{margin:0 0 8px}
+.note{font-size:14px;color:var(--muted)}
+
+footer{text-align:center;color:#fff;opacity:.85;font-size:14px;padding:30px 0 48px}
+footer a{margin:0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top">
+    <a class="brand" href="../index.html"><i aria-hidden="true">☀️</i>Sun Sizer Pro</a>
+    <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+  </nav>
+
+  <header class="hero">
+    <span class="kicker">WORKS 100% OFFLINE</span>
+    <h1>Survey the site.<br><span>Size the system.</span></h1>
+    <p class="lead">A complete solar design toolkit for iPhone and iPad: string sizing, wiring and code checks, sun path, production and off-grid sizing. Everything works right on the roof, with no signal needed.</p>
+    <div class="cta">
+      <!-- After approval, change this to: <a class="btn" href="https://apps.apple.com/app/idYOURAPPID"> -->
+      <span class="btn" aria-label="Coming soon to the App Store"> Coming soon to the App Store</span>
+      <a class="btn ghost" href="#features">See what's inside</a>
+    </div>
+    <div class="pills"><span>iPhone &amp; iPad</span><span>No account</span><span>No cloud</span><span>NASA climate data built in</span></div>
+  </header>
+
+  <div class="shots" aria-label="App screenshots">
+    <img src="img/site-and-sun.jpg" alt="Site & Sun tools: sun path, measure tilt, shade, roof plane, row spacing, area to panels" loading="lazy" width="600" height="1298">
+    <img src="img/sun-path.jpg" alt="Sun path arc with the best fixed tilt for the site" loading="lazy" width="600" height="1298">
+    <img src="img/production.jpg" alt="Estimated annual production of about 13,000 kWh" loading="lazy" width="600" height="1298">
+  </div>
+
+  <section id="features">
+    <div class="sec-title"><h2>Every calculation, one app</h2><p>Five toolsets that share one project, so you enter the numbers once.</p></div>
+    <div class="grid">
+      <div class="card"><div class="ic">▦</div><h3>Array</h3><ul><li>String sizing: min &amp; max panels per string from cold Voc and hot Vmp</li><li>Inverter match: DC:AC ratio, MPPT and combiner checks</li></ul></div>
+      <div class="card"><div class="ic">⚡</div><h3>Wiring</h3><ul><li>Voltage drop over the run</li><li>Ampacity &amp; OCPD (NEC 690.8)</li><li>Battery cables &amp; fuses</li><li>Conduit run and working-space clearance</li></ul></div>
+      <div class="card"><div class="ic">☀️</div><h3>Site &amp; Sun</h3><ul><li>Sun path &amp; best seasonal tilt</li><li>Measure tilt &amp; azimuth with the device's sensors</li><li>Shade, row spacing and area → panel count</li></ul></div>
+      <div class="card"><div class="ic">📊</div><h3>Energy</h3><ul><li>Production &amp; ROI with 25-year payback</li><li>Off-grid sizing: loads, battery, array and inverter surge</li><li>MPPT / PWM charge controller checks</li></ul></div>
+      <div class="card"><div class="ic">📁</div><h3>Workflow</h3><ul><li>Projects with a live code-check summary</li><li>Reusable panel, inverter and battery library</li><li>Client-ready PDF reports</li></ul></div>
+    </div>
+  </section>
+
+  <section class="split">
+    <img src="img/ipad-area-panels.jpg" alt="Sun Sizer Pro on iPad showing a panel layout mockup" loading="lazy" width="900" height="1200">
+    <div class="text">
+      <h2>Built for iPad, too.</h2>
+      <p>With the tools in a sidebar and your results side by side, the big screen is great for design reviews at the kitchen table or on the tailgate.</p>
+      <ul>
+        <li>Live layout mockups: portrait vs landscape</li>
+        <li>Code checks flagged the moment an input changes</li>
+        <li>Every calculator reads from and writes to the active project</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title"><h2>Made for the field</h2></div>
+    <div class="why">
+      <div class="card"><div class="big">📶</div><h3>No signal? No problem.</h3><p class="note">Climate data and every calculation are on the device. It works on rural sites, rooftops and in basements.</p></div>
+      <div class="card"><div class="big">🔒</div><h3>Private by design</h3><p class="note">No account, no cloud, no tracking. Client addresses and projects never leave your device.</p></div>
+      <div class="card"><div class="big">✅</div><h3>Shows its work</h3><p class="note">Results cite the check behind them, such as cold-weather Voc per NEC 690.7, so you can verify every number.</p></div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="card">
+      <h2>Free to download</h2>
+      <p>Download Sun Sizer Pro for free, then unlock the full toolkit with Premium inside the app.</p>
+      <p class="note">Results are design estimates. Always verify against equipment datasheets, the NEC edition your area has adopted, and your local AHJ before installation.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Chie · <a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
