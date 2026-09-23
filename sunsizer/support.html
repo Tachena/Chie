@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sun Sizer Support</title>
+<meta name="description" content="Help and contact for Sun Sizer Pro and Sun Sizer.">
+<style>
+:root{--bg1:#9FD0F2;--bg2:#4F86C4;--card:rgba(255,255,255,.92);--ink:#16324f;--muted:#4c6480;--gold:#E0A91B;--line:rgba(22,50,79,.12)}
+@media (prefers-color-scheme:dark){:root{--bg1:#1d3350;--bg2:#0e1a2b;--card:rgba(22,34,52,.92);--ink:#e8f0f8;--muted:#9fb3c8;--gold:#FFD95A;--line:rgba(255,255,255,.12)}}
+*{box-sizing:border-box}
+html{background:var(--bg2)}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:linear-gradient(170deg,var(--bg1),var(--bg2)) no-repeat;min-height:100vh}
+.wrap{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+header{color:#fff;text-align:center;margin-bottom:28px}
+header .sun{font-size:44px;line-height:1}
+header h1{margin:10px 0 4px;font-size:34px;letter-spacing:-.5px}
+header p{margin:0;opacity:.9}
+nav{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;font-size:15px}
+nav a[aria-current]{background:#fff;color:#16324f}
+.card{background:var(--card);border-radius:22px;padding:28px 24px;box-shadow:0 18px 50px rgba(10,30,60,.18);margin-bottom:18px}
+.contact{text-align:center}
+.btn{display:inline-block;margin-top:8px;background:#16324f;color:#fff;text-decoration:none;padding:12px 26px;border-radius:999px;font-weight:600}
+@media (prefers-color-scheme:dark){.btn{background:var(--gold);color:#16324f}}
+h2{font-size:22px;margin:0 0 6px}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";display:inline-block;width:1.4em;color:var(--gold);font-weight:700}
+details[open] summary::before{content:"－"}
+details p{margin:8px 0 0 1.4em}
+a{color:inherit}
+.muted{color:var(--muted);font-size:15px}
+footer{text-align:center;color:#fff;opacity:.85;font-size:14px;margin-top:28px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="sun" aria-hidden="true">☀️</div>
+    <h1>Support</h1>
+    <p>Sun Sizer Pro &amp; Sun Sizer</p>
+    <nav><a href="../index.html">Chie</a><a href="privacy.html">Privacy</a><a href="support.html" aria-current="page">Support</a></nav>
+  </header>
+
+  <section class="card contact">
+    <h2>Need a hand?</h2>
+    <p>Found a bug, have a feature idea or a question about a calculation? Send an email. Including your device model and iOS version helps.</p>
+    <a class="btn" href="mailto:tachena@me.com?subject=Sun%20Sizer%20Support">Email support</a>
+    <p class="muted">tachena@me.com · Replies usually within 2 business days</p>
+  </section>
+
+  <section class="card">
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Does the app need an internet connection?</summary>
+      <p>No. Every calculator, the equipment library, the NASA climate data and PDF export work fully offline, so you can use it on a roof or a remote site with no signal.</p>
+    </details>
+
+    <details>
+      <summary>How do I restore my Premium purchase?</summary>
+      <p>Open <b>Settings</b> (the gear icon) and tap <b>Restore Purchases</b>. Make sure you're signed in to the App Store with the same Apple account you used to buy it.</p>
+    </details>
+
+    <details>
+      <summary>Why does it ask for my location?</summary>
+      <p>Only to fill in your site's latitude and longitude for sun path and climate data. Location never leaves your device. You can say no and type coordinates in by hand.</p>
+    </details>
+
+    <details>
+      <summary>The tilt reading won't settle or shows 0°.</summary>
+      <p>Rest the device flat on the panel frame, top edge pointing up the slope, and hold still. Keep it away from metal racking and magnets, which disturb the compass. If readings drift, calibrate by moving the device in a figure-8. The Simulator and some iPads without motion sensors can't measure. Enter the tilt by hand instead.</p>
+    </details>
+
+    <details>
+      <summary>Where are my projects saved? Will I lose them?</summary>
+      <p>Projects are stored on your device and included in your normal iCloud or computer backup. Deleting the app deletes its projects, so export a PDF of anything you want to keep first.</p>
+    </details>
+
+    <details>
+      <summary>How accurate are the results?</summary>
+      <p>Solar position is accurate to about ±1°. Production figures are estimates, typically within ±10%. Code checks follow common NEC practice using bundled reference tables. Always verify against the actual equipment datasheets, the NEC edition your area has adopted, and your local authority having jurisdiction (AHJ) before installation. The app is a design aid, not a substitute for a licensed professional's review.</p>
+    </details>
+
+    <details>
+      <summary>What's the difference between Sun Sizer and Sun Sizer Pro?</summary>
+      <p>Sun Sizer is free and includes String Sizing and Panel Angle. Sun Sizer Pro adds the full toolkit: wiring and code checks, site and sun tools, production and ROI, off-grid sizing, equipment libraries, projects and PDF reports.</p>
+    </details>
+  </section>
+
+  <footer>© 2026 Chie · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
