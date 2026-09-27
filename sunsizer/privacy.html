@@ -3,89 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sun Sizer Privacy Policy</title>
+<title>Privacy Policy · Sun Sizer Pro</title>
 <meta name="description" content="Privacy policy for Sun Sizer Pro and Sun Sizer.">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <style>
-:root{--bg1:#9FD0F2;--bg2:#4F86C4;--card:rgba(255,255,255,.92);--ink:#16324f;--muted:#4c6480;--gold:#E0A91B;--line:rgba(22,50,79,.12)}
-@media (prefers-color-scheme:dark){:root{--bg1:#1d3350;--bg2:#0e1a2b;--card:rgba(22,34,52,.92);--ink:#e8f0f8;--muted:#9fb3c8;--gold:#FFD95A;--line:rgba(255,255,255,.12)}}
+:root{--bg1:#9FD0F2;--bg2:#4F86C4;--card:rgba(255,255,255,.93);--ink:#16324f;--muted:#4c6480;--accent:#E0A91B;--line:rgba(22,50,79,.12);--head:#fff;--pill:rgba(255,255,255,.18);--pillon:#fff;--pillonink:#16324f;--btn:#16324f;--btnink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg1:#1d3350;--bg2:#0e1a2b;--card:rgba(22,34,52,.93);--ink:#e8f0f8;--muted:#9fb3c8;--accent:#FFD95A;--line:rgba(255,255,255,.12);--btn:#FFD95A;--btnink:#16324f}}
 *{box-sizing:border-box}
 html{background:var(--bg2)}
 body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:linear-gradient(170deg,var(--bg1),var(--bg2)) no-repeat;min-height:100vh}
 .wrap{max-width:760px;margin:0 auto;padding:40px 16px 64px}
-header{color:#fff;text-align:center;margin-bottom:28px}
-header .sun{width:76px;height:76px;border-radius:17px;box-shadow:0 10px 26px rgba(10,30,60,.25)}
+header{color:var(--head);text-align:center;margin-bottom:28px}
+header .appicon{width:76px;height:76px;border-radius:17px;box-shadow:0 10px 26px rgba(0,0,0,.28)}
 header h1{margin:10px 0 4px;font-size:34px;letter-spacing:-.5px}
-header p{margin:0;opacity:.9}
+header p{margin:0;opacity:.85}
 nav{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;background:rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;font-size:15px}
-nav a[aria-current]{background:#fff;color:#16324f}
-.card{background:var(--card);border-radius:22px;padding:28px 24px;box-shadow:0 18px 50px rgba(10,30,60,.18)}
+nav a{color:var(--head);text-decoration:none;background:var(--pill);padding:6px 14px;border-radius:999px;font-size:15px}
+nav a[aria-current]{background:var(--pillon);color:var(--pillonink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 24px;box-shadow:0 18px 50px rgba(0,0,0,.16);margin-bottom:18px}
 h2{font-size:20px;margin:28px 0 8px;padding-top:20px;border-top:1px solid var(--line)}
-h2:first-of-type{border-top:0;padding-top:0;margin-top:8px}
-.summary{background:rgba(224,169,27,.12);border-left:4px solid var(--gold);border-radius:12px;padding:14px 18px;margin:0 0 8px}
+.card>h2:first-child,.summary+h2{border-top:0}
+.summary{background:color-mix(in srgb,var(--accent) 14%,transparent);border-left:4px solid var(--accent);border-radius:12px;padding:14px 18px;margin:12px 0 8px}
 .summary strong{display:block;margin-bottom:4px}
 ul{padding-left:22px}li{margin:4px 0}
 a{color:inherit}
 .muted{color:var(--muted);font-size:15px}
-footer{text-align:center;color:#fff;opacity:.85;font-size:14px;margin-top:28px}
+.contact{text-align:center}
+.contact h2{border:0;padding:0;margin:0 0 6px;font-size:22px}
+.btn{display:inline-block;margin-top:8px;background:var(--btn);color:var(--btnink);text-decoration:none;padding:12px 26px;border-radius:999px;font-weight:600}
+.faq h2{border:0;padding:0;margin:0 0 6px;font-size:22px}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";display:inline-block;width:1.4em;color:var(--accent);font-weight:700}
+details[open] summary::before{content:"－"}
+details p,details ul{margin:8px 0 0 1.4em}
+footer{text-align:center;color:var(--head);opacity:.8;font-size:14px;margin-top:28px}
+@media (max-width:420px){nav{gap:6px}nav a{padding:5px 11px;font-size:14px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <img class="sun" src="img/icon.png" alt="" width="76" height="76">
+    <img class="appicon" src="img/icon.png" alt="" width="76" height="76">
     <h1>Privacy Policy</h1>
     <p>Sun Sizer Pro &amp; Sun Sizer</p>
-    <nav><a href="../index.html">Chie</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav>
+    <nav><a href="../index.html">Chie</a><a href="index.html">Sun Sizer Pro</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav>
   </header>
-
   <main class="card">
-    <p class="muted">Effective September 23, 2026</p>
-
+    <p class="muted">Last updated September 26, 2026</p>
     <div class="summary">
       <strong>The short version</strong>
-      Sun Sizer doesn't collect, store or share any of your personal data. There is no account, no cloud and no tracking. Everything you enter stays on your device.
+      We don't collect any of your data. There's no account to create, no ads and no tracking. Your projects are saved on your device and, if you leave iCloud sync on, in your own private iCloud, which only you can access. We never see them.
     </div>
-
-    <p>This policy covers the iOS and iPadOS apps <b>Sun Sizer Pro</b> and <b>Sun Sizer</b> (together, “the apps”), published by Tachena (“we”, “us”).</p>
+    <p>This policy covers the iOS and iPadOS app <b>Sun Sizer Pro</b> and its free companion <b>Sun Sizer</b> (“the apps”), published by Tachena under the name Chie (“we”, “us”).</p>
 
     <h2>Information we collect</h2>
-    <p>None. We do not operate servers for the apps, and the apps do not send your projects, measurements, location or any other information to us or to anyone else.</p>
+    <p>None. We don't run servers for the apps, and the apps never send your projects, measurements, location or anything else to us or to any third party. We have no way to view your data.</p>
 
     <h2>Data stored on your device</h2>
-    <p>Projects, equipment libraries, measurements and settings are saved locally on your iPhone or iPad. They are included in your device's normal iCloud or computer backups if you have backups turned on, and those backups are managed by Apple under your Apple account settings. Deleting the app removes this data from the device.</p>
+    <p>Projects, saved calculations, your equipment library and settings are saved on your iPhone or iPad first. Everything works offline. The data is also included in your device's normal iCloud or computer backup if you use one.</p>
+
+    <h2>iCloud sync</h2>
+    <p>Sun Sizer Pro can keep your projects, saved calculations and equipment library in sync across every iPhone and iPad signed in to your Apple Account. It uses Apple's CloudKit and stores the data in <b>your private iCloud database</b>, which belongs to your Apple Account and counts toward your iCloud storage. We can't access it, and neither can anyone else. Apple handles it under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+    <ul>
+      <li>Sync is on by default. You can turn it off in <b>Settings → iCloud sync</b>, and the app then keeps everything on that device only.</li>
+      <li>If you aren't signed in to iCloud, your data stays on the device.</li>
+      <li>Deleting a project while sync is on deletes it from iCloud and from all your devices.</li>
+      <li>The app also stores one small flag in iCloud so the starter equipment is only added once per account.</li>
+    </ul>
+    <p>Some settings are never synced: the active project, units, display settings and quick-calculation fields.</p>
 
     <h2>Location</h2>
-    <p>If you tap <i>Use my location</i> and grant permission, the app reads your device's location to fill in a site's latitude and longitude for sun-position and climate calculations. The location is used on the device only and is saved only inside the project you're working on. It is never transmitted. You can deny or revoke location access at any time in Settings and type coordinates in by hand instead.</p>
+    <p>If you tap <i>Use my location</i> and allow access, the app reads your location to fill in a site's latitude, longitude and altitude, and to find true north when measuring a panel. The calculations run on your device. The coordinates are saved only in the project you're working on, which syncs through your private iCloud if sync is on. You can refuse or revoke location access at any time in Settings and type coordinates in by hand.</p>
 
     <h2>Camera and motion sensors</h2>
-    <p>Measurement tools use the device's motion sensors and, where offered, the camera to estimate tilt, facing and surface size. Readings are processed on the device in real time. The apps don't save or upload photos or video.</p>
+    <p>Measuring tools use the motion sensors and, for the camera tools, the camera (ARKit) to measure tilt, direction, distances and heights. This happens on your device in real time. The apps don't record, save or upload any photos or video.</p>
+
+    <h2>Notifications</h2>
+    <p>If you start the free trial and allow notifications, the app schedules one reminder on your device for the day before the trial ends. It's a local notification: nothing is sent to us or to a notification service.</p>
 
     <h2>Climate data</h2>
-    <p>Sunlight and temperature figures come from a NASA POWER dataset bundled inside the app. Looking up a site doesn't contact NASA or any other service.</p>
+    <p>Sunlight and temperature figures come from a NASA POWER dataset built into the app. Looking up a site doesn't contact NASA or any other service.</p>
 
-    <h2>PDF reports and sharing</h2>
-    <p>When you export a report, the app creates a PDF on your device and hands it to the standard iOS share sheet. Where it goes next, such as Mail, Messages or Files, is your choice and is handled by the app you pick.</p>
+    <h2>PDF reports, project files and sharing</h2>
+    <p>When you export a PDF report or share a project file, the app creates it on your device and hands it to the iOS share sheet. You choose where it goes, and the app you pick handles it from there.</p>
 
-    <h2>Purchases</h2>
-    <p>In-app purchases are processed entirely by Apple through the App Store. We never receive your name, email, payment details or Apple account information. We may see anonymous, aggregated sales figures that Apple provides to all developers.</p>
+    <h2>Purchases and the free trial</h2>
+    <p>Premium and the 14-day free trial are in-app purchases processed entirely by Apple through the App Store. The trial is a free (no-charge) purchase so that it stays with your Apple Account across devices and reinstalls. We never receive your name, email, payment details or Apple Account information. Apple gives developers only anonymous, aggregated sales figures.</p>
 
     <h2>Analytics, advertising and tracking</h2>
-    <p>The apps contain no advertising, no third-party analytics or tracking SDKs, and do not track you across other companies' apps or websites. If you have opted in to share crash data with developers in iOS Settings, Apple may provide us with anonymous crash reports. These contain no personal information and are used only to fix bugs.</p>
+    <p>The apps contain no advertising, no analytics and no third-party tracking code, and they don't track you across other companies' apps or websites. If you've chosen to share crash data with app developers in iOS Settings, Apple may send us anonymous crash reports, which we use only to fix bugs.</p>
 
     <h2>Children</h2>
-    <p>The apps are professional tools and are not directed to children. Because we collect no personal information, we do not knowingly collect information from anyone, including children under 13.</p>
+    <p>The apps are professional tools and are not aimed at children. We don't knowingly collect information from anyone, including children under 13.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Delete projects in the app (with sync on, this removes them from iCloud and all your devices too). Deleting the app removes its data from that device. You can also manage what apps store in your iCloud from your Apple Account settings.</p>
 
     <h2>Changes to this policy</h2>
-    <p>If a future version changes how the apps handle data, we'll update this page and the effective date above before that version is released.</p>
+    <p>If a future version changes how the apps handle data, we'll update this page and the date at the top before that version is released.</p>
 
     <h2>Contact</h2>
     <p>Questions about privacy? Email <a href="mailto:tachena@me.com">tachena@me.com</a>.</p>
   </main>
-
-  <footer>© 2026 Chie · Sun Sizer Pro</footer>
+  <footer>© 2026 Chie · <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></footer>
 </div>
 </body>
 </html>
