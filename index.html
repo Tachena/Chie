@@ -2,57 +2,177 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chie Apps</title>
-<meta name="description" content="Apps by Chie: Sun Sizer Pro, offline solar design, and Cut to Fade, screenwriting for iPhone, iPad and Mac.">
-<link rel="icon" type="image/png" href="sunsizer/img/favicon.png">
-<link rel="apple-touch-icon" href="sunsizer/img/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stone Bird: The Contract Era · Chie Collective</title>
+<meta name="description" content="Fly your mother's prototype jet in an air-combat story set in an alternate 1990s Africa. A game for iPhone by Chie Collective.">
+<meta property="og:title" content="Stone Bird: The Contract Era">
+<meta property="og:description" content="Air combat in an African epic. A game for iPhone by Chie Collective.">
+<meta property="og:image" content="assets/farai.jpg">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 <style>
-:root{--bg1:#243049;--bg2:#0b0e17;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.13);--ink:#eef1f6;--muted:#a9b2c3}
-*{box-sizing:border-box}
-html{background:var(--bg2)}
-body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:radial-gradient(900px 500px at 50% -10%,#3a4a6e 0%,transparent 65%),linear-gradient(180deg,var(--bg1),var(--bg2) 70%) no-repeat;min-height:100vh}
-.wrap{max-width:760px;margin:0 auto;padding:64px 16px 64px}
-header{text-align:center;margin-bottom:36px}
-header h1{margin:0;font-size:48px;letter-spacing:-1px}
-header p{margin:6px 0 0;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;gap:20px;align-items:center;margin-bottom:16px}
-.icon{flex:none;width:80px;height:80px;border-radius:18px;box-shadow:0 0 0 1px var(--line),0 10px 24px rgba(0,0,0,.35)}
-.card h2{margin:0;font-size:22px}
-.card p{margin:2px 0 10px;color:var(--muted)}
-.links{display:flex;flex-wrap:wrap;gap:4px 18px}
-.links a{color:var(--ink);font-weight:600;white-space:nowrap;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:3px}
-footer{text-align:center;color:var(--muted);font-size:14px;margin-top:32px}
-footer a{color:inherit}
-@media (max-width:480px){.card{align-items:flex-start}.icon{width:64px;height:64px;border-radius:14px}}
+  :root {
+    --bg: #0c0b0a;
+    --panel: #171513;
+    --text: #efe9dc;
+    --muted: #b3aa99;
+    --gold: #d9ab45;
+    --gold-light: #fae6a0;
+    --gold-deep: #9e701c;
+    --sand: #a89274;
+    --rule: rgba(217, 171, 69, 0.25);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  a { color: var(--gold-light); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  /* top bar */
+  nav { position: absolute; top: 0; left: 0; right: 0; z-index: 3; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; }
+  .brand { white-space: nowrap; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); font-weight: 700; text-decoration: none; }
+  nav .links a { color: var(--text); text-decoration: none; font-size: 14px; margin-left: 20px; opacity: 0.85; }
+  @media (max-width: 480px) { nav .links a { margin-left: 12px; font-size: 13px; } .brand { font-size: 11px; letter-spacing: 0.22em; } }
+  nav .links a:hover { opacity: 1; color: var(--gold-light); }
+
+  /* hero */
+  .hero { position: relative; min-height: 92vh; display: flex; align-items: flex-end; overflow: hidden; }
+  .hero img.bg {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(12,11,10,0.35) 0%, rgba(12,11,10,0) 30%, rgba(12,11,10,0.55) 62%, var(--bg) 96%);
+  }
+  .hero .wrap { position: relative; z-index: 2; padding-bottom: 56px; text-align: center; }
+  .kicker { font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin: 0 0 8px; }
+  h1 {
+    margin: 0; font-weight: 900; letter-spacing: 0.06em; line-height: 1;
+    font-size: clamp(48px, 11vw, 112px);
+    background: linear-gradient(180deg, var(--gold-light), var(--gold) 55%, var(--gold-deep));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 40px rgba(217,171,69,0.15);
+  }
+  .era { letter-spacing: 0.4em; text-transform: uppercase; font-size: clamp(13px, 2.4vw, 18px); margin: 12px 0 0; color: var(--text); }
+  .tagline { max-width: 560px; margin: 22px auto 0; color: var(--text); font-size: 18px; }
+  .cta { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 13px 24px; border-radius: 999px; text-decoration: none; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px;
+  }
+  .btn.primary { background: linear-gradient(180deg, var(--gold-light), var(--gold)); color: #1b140a; }
+  .btn.ghost { border: 1px solid var(--rule); color: var(--gold-light); background: rgba(12,11,10,0.4); }
+
+  section { padding: 72px 0; }
+  section + section { border-top: 1px solid var(--rule); }
+  h2 { font-size: 13px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin: 0 0 14px; }
+  .lead { font-size: clamp(20px, 3vw, 26px); line-height: 1.45; max-width: 780px; margin: 0; }
+  .lead em { color: var(--gold-light); font-style: normal; }
+
+  /* the clay-mark divider */
+  .marks { display: flex; justify-content: center; gap: 10px; margin: 0 0 40px; }
+  .marks span { width: 7px; height: 7px; border-radius: 50%; background: var(--sand); opacity: 0.7; }
+  .marks span:nth-child(odd) { transform: translateY(6px); }
+
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 34px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 14px; padding: 22px; }
+  .card h3 { margin: 0 0 8px; font-size: 18px; color: var(--gold-light); }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); justify-content: center; gap: 22px; margin-top: 44px; }
+  @media (max-width: 480px) { .shots { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+  .shots figure { margin: 0; }
+  .shots img {
+    width: 100%; aspect-ratio: 9 / 18; object-fit: cover; border-radius: 22px; border: 1px solid var(--rule);
+    display: block; background: var(--panel);
+  }
+  .shots figcaption { color: var(--muted); font-size: 14px; margin-top: 10px; text-align: center; }
+
+  .about { display: grid; grid-template-columns: 120px 1fr; gap: 24px; align-items: center; }
+  .about img { width: 120px; height: 120px; border-radius: 27px; }
+  @media (max-width: 560px) { .about { grid-template-columns: 1fr; text-align: center; } .about img { margin: 0 auto; } }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--muted); margin-right: 18px; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Chie</h1>
-    <p>Tools for the field and the page, made with care.</p>
-  </header>
 
-  <section class="card">
-    <img class="icon" src="sunsizer/img/icon.png" alt="" width="80" height="80">
-    <div>
-      <h2>Sun Sizer Pro</h2>
-      <p>An offline solar design toolkit for iPhone and iPad, with code checks, production estimates and iCloud sync.</p>
-      <div class="links"><a href="sunsizer/index.html">Learn more</a><a href="sunsizer/support.html">Support</a><a href="sunsizer/privacy.html">Privacy Policy</a></div>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Chie Collective</a>
+    <div class="links"><a href="#story">Story</a><a href="#features">Features</a><a href="support.html">Support</a></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="bg" src="assets/farai.jpg" alt="Farai Moyo in her flight suit, clay marks on her face, her mother's jet in the hangar behind her">
+  <div class="wrap">
+    <p class="kicker">A Stone &amp; Gold Story</p>
+    <h1>STONE BIRD</h1>
+    <p class="era">The Contract Era</p>
+    <p class="tagline">Air combat in an African epic. Fly your mother's prototype jet into a war the trading houses started.</p>
+    <div class="cta">
+      <!-- Replace BETA_LINK with your TestFlight public link, and swap this button for the App Store badge at launch -->
+      <a class="btn primary" href="BETA_LINK">Join the beta</a>
+      <a class="btn ghost" href="#story">The story</a>
     </div>
-  </section>
+  </div>
+</header>
 
-  <section class="card">
-    <img class="icon" src="cuttofade/img/icon.png" alt="" width="80" height="80">
-    <div>
-      <h2>Cut to Fade</h2>
-      <p>Quick-format screenwriting for iPhone, iPad and Mac, with industry-standard PDF, Fountain files and iCloud sync.</p>
-      <div class="links"><a href="cuttofade/index.html">Learn more</a><a href="cuttofade/support.html">Support</a><a href="cuttofade/privacy.html">Privacy Policy</a></div>
+<section id="story">
+  <div class="wrap">
+    <div class="marks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <h2>The story</h2>
+    <p class="lead">The raid came at dawn. Tendai Moyo, the plateau's greatest test pilot, the one they called
+      <em>Stone Bird</em>, went down defending the range. Her daughter Farai escaped in the one thing they
+      couldn't take: her mother's prototype jet, <em>Goredema</em>.</p>
+    <p class="lead" style="margin-top:18px">Now Farai flies for whoever pays, taking contracts from the trading houses
+      that run the skies of an alternate 1990s Africa, and asking who really ordered the raid.</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>The game</h2>
+    <p class="lead">A vertical-scrolling air-combat game in the tradition of the classic arcade shooters, told as a story.</p>
+    <div class="grid">
+      <div class="card"><h3>Fly a story</h3><p>A cinematic campaign told through radio chatter, set pieces and boss fights. Escort river convoys, break a desert gun line, outfly an enemy ace.</p></div>
+      <div class="card"><h3>Build your loadout</h3><p>Earn on every contract and spend it in Nyeleni's hangar. Switch heavy weapons in flight: the Sun Lance beam, the Mosi plasma cannon, the Hammerhead missile.</p></div>
+      <div class="card"><h3>Restore Goredema</h3><p>Your mother's jet came out of the raid damaged and locked down. Wake her engine stage by stage and bring her targeting computer back online.</p></div>
+      <div class="card"><h3>A world of its own</h3><p>River forests, sandstone plateaus and the open erg in dust storms. Brass-and-gold aircraft, an original score, and no ads.</p></div>
     </div>
-  </section>
+    <div class="shots">
+      <figure><img src="assets/shot-plateau.jpg" alt="Goredema flying over a river on the forested plateau" loading="lazy"><figcaption>The prologue: escaping the plateau</figcaption></figure>
+      <figure><img src="assets/shot-erg.jpg" alt="Goredema firing over the desert dunes of the erg" loading="lazy"><figcaption>Contract 3: the erg</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-  <footer>© 2026 Chie · Questions? <a href="mailto:tachena@me.com">tachena@me.com</a></footer>
-</div>
+<section>
+  <div class="wrap about">
+    <img src="assets/icon.png" alt="Stone Bird app icon">
+    <div>
+      <h2>Coming to iPhone</h2>
+      <p style="margin:0">Stone Bird: The Contract Era is in beta now. No ads, no tracking, no account needed.
+        Questions or feedback? Visit <a href="support.html">support</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+    <div>© 2026 Chie Collective</div>
+  </div>
+</footer>
+
 </body>
 </html>
