@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stone Bird: The Contract Era · Apple Arcade pitch</title>
+<meta name="description" content="A story-driven vertical air-combat epic across Africa, for iPhone, iPad and Apple TV. By Tachena Nhubu, Chie Collective.">
+<meta property="og:title" content="Stone Bird: The Contract Era">
+<meta property="og:description" content="A story-driven vertical air-combat epic across Africa, for iPhone, iPad and Apple TV. By Tachena Nhubu, Chie Collective.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tachena.github.io/Chie/stonebird-pitch/og.jpg">
+<meta property="og:url" content="https://tachena.github.io/Chie/stonebird-pitch/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  :root { --bg:#0d0b09; --gold:#d9ab45; --bone:#efe7d6; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--bg); color:var(--bone); font-family:'Public Sans', Arial, sans-serif; }
+  header { position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:16px;
+           padding:12px 16px; background:rgba(13,11,9,.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(217,171,69,.25); }
+  header .t { font-family:'Oswald', Arial, sans-serif; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-size:17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  header nav { display:flex; gap:10px; flex-shrink:0; }
+  header a { font-size:14px; font-weight:600; text-decoration:none; padding:8px 14px; border-radius:999px; border:1px solid var(--gold); color:var(--gold); white-space:nowrap; }
+  header a.primary { background:var(--gold); color:#15120f; }
+  main { max-width:1600px; margin:0 auto; padding:24px 16px 64px; display:flex; flex-direction:column; gap:24px; }
+  .slide { position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; border-radius:10px; box-shadow:0 10px 40px rgba(0,0,0,.5); scroll-margin-top:72px; }
+  .slide > section { position:absolute; top:0; left:0; width:1920px; height:1080px; transform-origin:0 0; overflow:hidden; }
+  .slide section * { margin:0; }
+  .slide section ul { padding-left:1.1em; }
+  .slide section table { border-collapse:collapse; }
+  .slide section th, .slide section td { padding:.35em .6em; border-bottom:1px solid rgba(239,231,214,.14); vertical-align:top; }
+  .slide section a { text-decoration:underline; }
+  footer { text-align:center; color:#8f8676; font-size:14px; padding:0 16px 40px; }
+  footer a { color:#b9ae9a; }
+  @media (max-width:640px) { header a.secondary { display:none; } main { padding:16px 8px 48px; gap:14px; } }
+  @media print { header, footer { display:none; } main { padding:0; gap:0; max-width:none; } .slide { border-radius:0; box-shadow:none; break-after:page; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="t">Stone Bird · Apple Arcade pitch</div>
+  <nav>
+    <a class="secondary" id="pdf" href="stone-bird-pitch.pdf" download hidden>PDF</a>
+    <a class="secondary" href="mailto:tachena@chie.design">Contact</a>
+    <a class="primary" href="https://testflight.apple.com/join/Q4PAGvzU">Play the beta</a>
+  </nav>
+</header>
+<main>
+<div class="slide" id="s-cover">
+<section id="cover" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:32px">
+<img src="images/01_hero.jpg" alt="Goredema, a gunmetal and cobalt jet, firing up the river past the Great Enclosure at a Meridian formation" style="position:absolute;left:1110px;top:0px;width:810px;height:1080px;object-fit:cover">
+<div style="position:absolute;left:1110px;top:0px;width:240px;height:1080px;background:linear-gradient(90deg, #15120f 0%, rgba(21,18,15,0) 100%)"></div>
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:880px">Apple Arcade pitch · Chie Collective</p>
+<h1 style="font-family:'Oswald', Arial, sans-serif;font-size:180px;font-weight:700;line-height:1;color:#d9ab45;letter-spacing:6px;text-transform:uppercase;width:900px">Stone Bird</h1>
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:44px;letter-spacing:10px;text-transform:uppercase;color:#efe7d6;width:900px">The Contract Era</p>
+<p style="font-size:32px;line-height:1.4;color:#b9ae9a;width:860px">A story-driven vertical air-combat epic across Africa, for iPhone, iPad and Apple TV.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#8f8676">Playable beta on TestFlight now · Tachena Nhubu, Chie Collective</p>
+
+</section>
+</div>
+<div class="slide" id="s-hook">
+<section id="hook" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<img src="images/02_fly_your_mothers_jet.jpg" alt="Goredema flying over the Hungwe range with Tendai's chase jet, her radio line on screen" style="position:absolute;left:1232px;top:128px;width:560px;height:746px;object-fit:cover;border-radius:16px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:1000px">The hook</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.05;color:#efe7d6;width:1000px">Fly your mother's jet.</h2>
+<p style="font-size:32px;line-height:1.45;color:#cfc5b2;width:960px">Farai Moyo's mother Tendai was the pilot the plateau called Stone Bird. On Farai's certification flight, a raid brings Tendai down. Farai flies west in Goredema, the prototype everyone is hunting, and takes contracts on Africa's Atlantic coast under a name she can't use.</p>
+<p style="font-size:32px;line-height:1.45;color:#cfc5b2;width:960px">The jobs lead to Meridian, the house arming both sides of every war, and to an ace who knows exactly how her mother flew.</p>
+
+</section>
+</div>
+<div class="slide" id="s-story">
+<section id="story" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The story</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Three acts, twelve contracts, two endings</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Prologue · Act I</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">The Raid and the Coast</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">A flight over Great Zimbabwe ends in a raid. Farai lands on the Atlantic coast flying contracts for the Broker, until the Iron Coast's ace, Harmattan, hears how she flies.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Act II</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">The Contract War</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">Gun-runners off Cabo Verde, a night convoy through the Delta carrying Tendai's flight book, a storm duel off São Tomé, and Meridian's depot at Djenné.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Act III</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">The Hill</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">Stone or gold: her answer to Meridian sets the road. Both run through the Skeleton Coast, Victoria Falls and Kariba to the Kraal, a fortress in the air over the Hill.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.45;font-style:italic;color:#b9ae9a">A jeli, a West African storyteller, opens every contract: “Listen. Before the contracts, before the gold, there was a girl from the plateau, and a mother the plateau called Stone Bird.”</p>
+
+</section>
+</div>
+<div class="slide" id="s-world">
+<section id="world" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Real places, from the plateau to the Atlantic</h2>
+<table style="font-size:24px;color:#cfc5b2;font-family:'Public Sans', Arial, sans-serif">
+<tr style="background:#15120f"><th style="width:14%;text-align:left;color:#d9ab45">Contract</th><th style="width:30%;text-align:left;color:#d9ab45">Where</th><th style="width:56%;text-align:left;color:#d9ab45">What happens</th></tr>
+<tr><td>Prologue</td><td>Hungwe range, Great Zimbabwe</td><td>A certification flight becomes a raid</td></tr>
+<tr><td>1</td><td>An Atlantic estuary</td><td>Escort a cargo convoy past Iron Coast gunboats</td></tr>
+<tr><td>2</td><td>Bandiagara Escarpment</td><td>Stop the armour; the cliff villages are not targets</td></tr>
+<tr><td>3</td><td>The Erg, by Araouane</td><td>Gun lines in the dunes, and a voice that knows her name</td></tr>
+<tr><td>4</td><td>The Iron Coast shipyard</td><td>Strike the yard with the house's best pilots overhead</td></tr>
+<tr><td>5</td><td>Cabo Verde</td><td>Catch the gun-running freighters low over the sea</td></tr>
+<tr><td>6</td><td>The Niger Delta</td><td>A night convoy under the patrol boats' searchlights</td></tr>
+<tr><td>7</td><td>São Tomé</td><td>Harmattan, in the worst storm of the year</td></tr>
+<tr><td>8</td><td>Djenné</td><td>Meridian's depot upstream of the Great Mosque</td></tr>
+<tr><td>9</td><td>The Skeleton Coast</td><td>The Echoes: copies of Goredema that mirror you</td></tr>
+<tr><td>10</td><td>Victoria Falls</td><td>Stop the armoured train before the bridge</td></tr>
+<tr><td>11</td><td>Kariba</td><td>Bombers come from behind for the dam</td></tr>
+<tr><td>12</td><td>The Hill, Great Zimbabwe</td><td>The Kraal, Meridian's fortress in the air</td></tr>
+</table>
+
+</section>
+</div>
+<div class="slide" id="s-loop">
+<section id="loop" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">How it plays</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Short contracts, a long campaign</h2>
+<div style="display:flex;align-items:stretch;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#201b16;padding:36px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">Briefing</h3>
+<p style="font-size:26px;line-height:1.4;color:#cfc5b2">The jeli sets the scene; the Broker names the job and the pay.</p>
+</div>
+<div class="arrow" style="width:56px;display:flex;align-items:center;justify-content:center"><svg width="56" height="24" viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H46" stroke="#d9ab45" stroke-width="3"/><path d="M42 4 L54 12 L42 20" fill="none" stroke="#d9ab45" stroke-width="3"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#201b16;padding:36px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">Fly</h3>
+<p style="font-size:26px;line-height:1.4;color:#cfc5b2">One finger flies, the guns fire themselves. Four to six minutes a contract.</p>
+</div>
+<div class="arrow" style="width:56px;display:flex;align-items:center;justify-content:center"><svg width="56" height="24" viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H46" stroke="#d9ab45" stroke-width="3"/><path d="M42 4 L54 12 L42 20" fill="none" stroke="#d9ab45" stroke-width="3"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#201b16;padding:36px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">Get paid</h3>
+<p style="font-size:26px;line-height:1.4;color:#cfc5b2">Payout in gold mithqal, plus bonuses for what she protects.</p>
+</div>
+<div class="arrow" style="width:56px;display:flex;align-items:center;justify-content:center"><svg width="56" height="24" viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H46" stroke="#d9ab45" stroke-width="3"/><path d="M42 4 L54 12 L42 20" fill="none" stroke="#d9ab45" stroke-width="3"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#201b16;padding:36px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">The hangar</h3>
+<p style="font-size:26px;line-height:1.4;color:#cfc5b2">Nyeleni sells, upgrades and lets you test-fire every weapon first.</p>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1500px">A prologue and twelve contracts make the campaign. Restoring Goredema's own systems unlocks Tendai's flight-recorder tapes; finishing opens the Goredema sky, the hardest of four difficulties, and an archive to fly any contract again.</p>
+
+</section>
+</div>
+<div class="slide" id="s-combat">
+<section id="combat" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<img src="images/06_build_your_arsenal.jpg" alt="The Mk III Sun Lance, a crackling white beam, burning into Meridian's gunship over the escarpment" style="position:absolute;left:1232px;top:128px;width:560px;height:746px;object-fit:cover;border-radius:16px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:1000px">The armoury</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6;width:1000px">Eight weapons, three marks each</h2>
+<div style="display:flex;flex-direction:column;gap:20px;width:1000px">
+<p style="font-size:30px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">Guns:</b> twin 20 mm cannons, then a six-barrel rotary, then rotary plus high-explosive cannons.</p>
+<p style="font-size:30px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">Support:</b> heat-seeking missiles, a plasma fan, a flak turret, a seeker swarm and an ember mortar. Each can hit only what it physically could: heat-seekers need an engine, flak bursts at altitude.</p>
+<p style="font-size:30px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">Heavy:</b> the Sun Lance beam, which overheats; the Mosi ball, which punches through a line; the Hammerhead, for armour. Each Mk III changes how it fights, not just its numbers.</p>
+<p style="font-size:30px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">Test range:</b> every weapon and mark fires live in the hangar before you buy it.</p>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-rainmaker">
+<section id="rainmaker" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<img src="images/03_rainmaker.jpg" alt="The Rainmaker: a storm cloud over Djenné and a sheet of white-hot rain bringing down every enemy on screen" style="position:absolute;left:1232px;top:128px;width:560px;height:746px;object-fit:cover;border-radius:16px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:1000px">Big moments</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6;width:1000px">Call the Rainmaker</h2>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1000px">Goredema throws a charge into the sky, it bursts into a storm, and white-hot rain comes down on everything under it, air and ground, ending in a thunderclap. The Storm Discharge, charged in battle, chains lightning from target to target.</p>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1000px">Against them, more than 30 kinds of enemy: Shades that cloak, Echoes that mirror her, Kestrels that sweep their wings to dash, gunboats, an armoured train, a river monitor and the Kraal.</p>
+
+</section>
+</div>
+<div class="slide" id="s-rival">
+<section id="rival" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<img src="images/04_he_knows_your_name.jpg" alt="Harmattan's black and gold jet with two Echoes over the Skeleton Coast, his radio line on screen" style="position:absolute;left:1232px;top:128px;width:560px;height:746px;object-fit:cover;border-radius:16px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:1000px">The rival</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6;width:1000px">Harmattan knows her name</h2>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1000px">The Iron Coast House's ace was one of Tendai's pupils. He hunts Farai across the coast in duels that play like a real dogfight: he never hovers, he steers like an aircraft, and he comes round from behind.</p>
+<p style="font-size:44px;line-height:1.3;font-family:'Oswald', Arial, sans-serif;color:#d9ab45;width:1000px">“You fly like someone I used to know, stone bird. Next time, it's me.”</p>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1000px">On the stone road he ends the war on her wing.</p>
+
+</section>
+</div>
+<div class="slide" id="s-choice">
+<section id="choice" style="background:#d9ab45;color:#15120f;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#3a2c12;font-weight:600">The choice</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:160px;font-weight:700;line-height:1;color:#15120f;text-transform:uppercase">Stone or gold?</h2>
+<p style="font-size:36px;line-height:1.45;color:#2a210f;width:1400px">Meridian offers more gold than anyone on the coast has ever seen, for Tendai's book and Farai's silence. Take it, and fight the last act with Meridian's money. Refuse, and the book goes to every house on the coast.</p>
+<p style="font-size:36px;line-height:1.45;color:#2a210f;width:1400px;font-weight:600">Two roads through Act III. Two endings. The player's answer, not a dialogue tree.</p>
+
+</section>
+</div>
+<div class="slide" id="s-craft">
+<section id="craft" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The craft</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Made by a filmmaker</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#d9ab45">Look</h3>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Afrofuturism rooted in real design: Ndebele zigzags, clay-dot markings and the soapstone birds of Great Zimbabwe. Hand-built terrain with real-time lighting, weather, mist and night.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#d9ab45">Sound</h3>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">An original score built on mbira, kora and talking drum (more on the next slide). Every weapon has its own designed sound, Mk III included, and the radio is mixed for a voice cast, recorded next.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:40px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#d9ab45">Story</h3>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Told like a radio drama while you fly, with helmet cut-ins, a jeli's framing and an afterword for every contract. A 305-line script is written and ready to record.</p>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-score">
+<section id="score" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;gap:64px">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The soundtrack</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">An original score, and an album</h2>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Sixteen tracks, about 53 minutes: a theme for every contract, the hangar, the title and the flight home, all composed for the game by Tachena Nhubu.</p>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Mbira dzavadzimu in its two interlocking parts, kora, balafon, talking drum, djembe and an amapiano log drum, fused with synths.</p>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Three versions of every track, the same length so the game can switch between them: Afrofuturist; Afrofuturist with mbira; and Great Zimbabwe 1994, the record a Harare studio might have cut that year in a Zimbabwe that was never colonised.</p>
+</div>
+<div style="width:640px;display:flex;flex-direction:column;justify-content:center;gap:20px;background:#15120f;padding:48px;border-radius:12px">
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:32px;letter-spacing:3px;text-transform:uppercase;color:#d9ab45">Stone Bird OST</p>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;color:#cfc5b2">01 Stone Bird</p>
+<p style="font-size:24px;color:#cfc5b2">02 The Contract Wire</p>
+<p style="font-size:24px;color:#cfc5b2">03 The Raid</p>
+<p style="font-size:24px;color:#cfc5b2">04 First Contract</p>
+<p style="font-size:24px;color:#cfc5b2">05 Nyeleni's Hangar</p>
+<p style="font-size:24px;color:#cfc5b2">06 The Escarpment</p>
+<p style="font-size:24px;color:#cfc5b2">07 The Erg</p>
+<p style="font-size:24px;color:#cfc5b2">08 Shipyard Strike</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;color:#cfc5b2">09 The Cargo Run</p>
+<p style="font-size:24px;color:#cfc5b2">10 Night Convoy</p>
+<p style="font-size:24px;color:#cfc5b2">11 The Depot</p>
+<p style="font-size:24px;color:#cfc5b2">12 The Bone Coast</p>
+<p style="font-size:24px;color:#cfc5b2">13 The Smoke That Thunders</p>
+<p style="font-size:24px;color:#cfc5b2">14 Kariba</p>
+<p style="font-size:24px;color:#cfc5b2">15 The Hill</p>
+<p style="font-size:24px;color:#cfc5b2">16 Home</p>
+</div>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-platforms">
+<section id="platforms" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The build</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Native to Apple, on every screen it runs on</h2>
+<table style="font-size:28px;color:#cfc5b2;font-family:'Public Sans', Arial, sans-serif">
+<tr style="background:#15120f"><th style="width:24%;text-align:left;color:#d9ab45">Where</th><th style="width:76%;text-align:left;color:#d9ab45">How</th></tr>
+<tr><td>iPhone</td><td>Drag anywhere to fly; the guns fire on their own</td></tr>
+<tr><td>iPad</td><td>The play field stays tall; the sides become a Great Zimbabwe cockpit</td></tr>
+<tr><td>Apple TV</td><td>Siri Remote and game controllers, menus scaled for the room</td></tr>
+<tr><td>Controllers</td><td>Full support, with on-screen button legends</td></tr>
+<tr><td>Saves</td><td>Three logbooks, synced through the player's own iCloud</td></tr>
+<tr><td>Engine</td><td>Swift, SwiftUI and SpriteKit; no third-party engine, no ads, no tracking</td></tr>
+</table>
+<p style="font-size:28px;color:#b9ae9a">Plays fully offline. One build for iPhone, iPad and Apple TV, with a single bundle and shared saves.</p>
+
+</section>
+</div>
+<div class="slide" id="s-fit">
+<section id="fit" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">Why Apple Arcade</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Made to be a premium game, not a store</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#201b16;padding:40px;border-left:4px solid #d9ab45;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#efe7d6">No ads, no purchases</h3>
+<p style="font-size:28px;line-height:1.4;color:#cfc5b2">Economy, upgrades and difficulty are tuned for play, not spending. The beta already ships with purchases switched off.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#201b16;padding:40px;border-left:4px solid #d9ab45;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#efe7d6">Every Apple screen</h3>
+<p style="font-size:28px;line-height:1.4;color:#cfc5b2">Start on iPhone, carry on with a controller on Apple TV: the same logbook follows the player.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#201b16;padding:40px;border-left:4px solid #d9ab45;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#efe7d6">A story Arcade doesn't have</h3>
+<p style="font-size:28px;line-height:1.4;color:#cfc5b2">A narrative shooter set across Africa, its places and its storytelling treated with care.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#201b16;padding:40px;border-left:4px solid #d9ab45;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#efe7d6">Easy to start, deep to master</h3>
+<p style="font-size:28px;line-height:1.4;color:#cfc5b2">One-finger flying and four skies, from the Contract sky to Goredema's stone-and-gold challenge.</p>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-universe">
+<section id="universe" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:44px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The bigger picture</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">The first story in the Stone &amp; Gold universe</h2>
+<p style="font-size:30px;line-height:1.45;color:#cfc5b2;width:1500px">An alternate 1990s in which Africa was never colonized: great houses, contract wars and Hungwe engineering, with Great Zimbabwe at its heart. Its places, factions, characters and music are built to carry many games, across genres.</p>
+<div style="display:flex;align-items:stretch;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#15120f;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Now</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">Stone Bird: The Contract Era</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">Air combat. Farai, Goredema and the fall of Meridian.</p>
+</div>
+<div class="arrow" style="width:56px;display:flex;align-items:center;justify-content:center"><svg width="56" height="24" viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H46" stroke="#d9ab45" stroke-width="3"/><path d="M42 4 L54 12 L42 20" fill="none" stroke="#d9ab45" stroke-width="3"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#15120f;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Next</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">A racing game</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">The same world on the ground: [working title and premise].</p>
+</div>
+<div class="arrow" style="width:56px;display:flex;align-items:center;justify-content:center"><svg width="56" height="24" viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H46" stroke="#d9ab45" stroke-width="3"/><path d="M42 4 L54 12 L42 20" fill="none" stroke="#d9ab45" stroke-width="3"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#15120f;padding:40px;border-top:4px solid #d9ab45;border-radius:12px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#d9ab45;font-weight:600">Then</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#efe7d6">Stone Bird 2</h3>
+<p style="font-size:26px;line-height:1.45;color:#cfc5b2">Farai's story continues, with what players have come to know of the world.</p>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-status">
+<section id="status" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:40px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">Where it stands</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Playable end to end, in beta today</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#15120f;padding:40px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">Done</h3>
+<ul style="font-size:28px;line-height:1.5;color:#cfc5b2">
+<li>Full campaign: prologue, 12 contracts, both routes and endings</li>
+<li>Four difficulties, archive replays, unlockable livery</li>
+<li>Eight weapons with three marks; hangar test range</li>
+<li>Original score; iCloud saves; iPhone, iPad, Apple TV</li>
+<li>A TestFlight beta in testers' hands</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#15120f;padding:40px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:40px;font-weight:600;color:#d9ab45">For Arcade</h3>
+<ul style="font-size:28px;line-height:1.5;color:#cfc5b2">
+<li>Story cinematics: a new opening, and an ending scene</li>
+<li>Game Center: achievements and leaderboards</li>
+<li>A Mac version</li>
+<li>Record the voice cast (305 lines, scripted)</li>
+<li>Accessibility: VoiceOver menus, flashing and motion options</li>
+<li>Localization; performance on older devices</li>
+</ul>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-team">
+<section id="team" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">Who makes it</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">Chie Collective</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:2;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:44px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#d9ab45">Tachena Nhubu</h3>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">Founder, director, developer and composer. A filmmaker working across cinematography and post-production, and an iOS developer, who also wrote the score. Stone Bird is the first game, and it is directed the way a film is.</p>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">[Earlier work, credits or apps to name]</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#201b16;padding:44px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;color:#d9ab45">Collaborators</h3>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">[Voice cast, to be recorded]</p>
+<p style="font-size:28px;line-height:1.45;color:#cfc5b2">[Others]</p>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-budget">
+<section id="budget" style="background:#201b16;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600">The budget</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:72px;font-weight:600;line-height:1.1;color:#efe7d6">$175,000 to finish it right</h2>
+<div style="display:flex;gap:40px;align-items:start">
+<table style="width:1000px;font-size:26px;color:#cfc5b2;font-family:'Public Sans', Arial, sans-serif">
+<tr style="background:#15120f"><th style="width:70%;text-align:left;color:#d9ab45">What it pays for</th><th style="width:30%;text-align:right;color:#d9ab45">USD</th></tr>
+<tr><td>Development, 8 months full-time</td><td style="text-align:right">72,000</td></tr>
+<tr><td>Opening and ending cinematics</td><td style="text-align:right">22,000</td></tr>
+<tr><td>Localization into 7 languages, with review</td><td style="text-align:right">24,000</td></tr>
+<tr><td>Professional voice cast, studio and direction</td><td style="text-align:right">18,000</td></tr>
+<tr><td>Engineering support: Mac, older devices</td><td style="text-align:right">10,000</td></tr>
+<tr><td>Testing and an accessibility review</td><td style="text-align:right">8,000</td></tr>
+<tr><td>Legal and accounting</td><td style="text-align:right">5,000</td></tr>
+<tr><td>Contingency, about 10%</td><td style="text-align:right">16,000</td></tr>
+<tr style="background:#15120f"><td style="color:#efe7d6;font-weight:600">Total</td><td style="text-align:right;color:#efe7d6;font-weight:600">175,000</td></tr>
+</table>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#15120f;padding:36px;border-radius:12px">
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:36px;font-weight:600;color:#d9ab45">Paid by milestone</h3>
+<p style="font-size:24px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">30% at signing</b><br>$52,500 · month 0</p>
+<p style="font-size:24px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">30% at alpha, month 3</b><br>$52,500 · voice recorded, cinematics cut, Game Center and Mac running</p>
+<p style="font-size:24px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">25% at launch candidate, month 6</b><br>$43,750 · localized, accessible, tested</p>
+<p style="font-size:24px;line-height:1.4;color:#cfc5b2"><b style="color:#efe7d6">15% at launch, month 8</b><br>$26,250</p>
+</div>
+</div>
+
+</section>
+</div>
+<div class="slide" id="s-ask">
+<section id="ask" style="background:#15120f;color:#efe7d6;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<img src="images/07_stone_or_gold.jpg" alt="Goredema crossing the Hill, the ground half in grey stone and half in gold" style="position:absolute;left:1232px;top:128px;width:560px;height:746px;object-fit:cover;border-radius:16px">
+<p style="font-size:24px;letter-spacing:6px;text-transform:uppercase;color:#d9ab45;font-weight:600;width:1000px">The ask</p>
+<h2 style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:600;line-height:1.05;color:#efe7d6;width:1000px">Bring Stone Bird to Apple Arcade</h2>
+<p style="font-size:32px;line-height:1.45;color:#cfc5b2;width:1000px">An Arcade partnership with funding of $175,000 to direct an opening and an ending cinematic, record the voice cast, add Game Center and Mac, and finish accessibility, localization and polish, for a launch eight months after signing.</p>
+<p style="font-size:32px;line-height:1.45;color:#cfc5b2;width:1000px">The beta is ready to play now on iPhone, iPad and Apple TV.</p>
+<p style="font-size:28px;color:#d9ab45;width:1000px">Play the beta: <a href="https://testflight.apple.com/join/Q4PAGvzU" style="color:#d9ab45">testflight.apple.com/join/Q4PAGvzU</a></p>
+<p style="font-size:28px;color:#b9ae9a;width:1000px"><a href="mailto:tachena@chie.design" style="color:#b9ae9a">tachena@chie.design</a></p>
+
+</section>
+</div>
+</main>
+<footer>© Tachena Nhubu · Chie Collective · <a href="mailto:tachena@chie.design">tachena@chie.design</a></footer>
+<script>
+  // each slide is drawn on a 1920 x 1080 canvas and scaled to fit the page
+  const fit = () => document.querySelectorAll('.slide').forEach(s => {
+    s.firstElementChild.style.transform = 'scale(' + (s.clientWidth / 1920) + ')';
+  });
+  addEventListener('resize', fit); fit();
+  document.fonts && document.fonts.ready.then(fit);
+  // arrow keys, space and page keys step from slide to slide
+  const slides = [...document.querySelectorAll('.slide')];
+  const current = () => slides.findIndex(s => s.getBoundingClientRect().bottom > 120);
+  addEventListener('keydown', e => {
+    const k = e.key; let d = 0;
+    if (['ArrowDown','ArrowRight','PageDown',' '].includes(k)) d = 1;
+    if (['ArrowUp','ArrowLeft','PageUp'].includes(k)) d = -1;
+    if (!d) return;
+    e.preventDefault();
+    const i = Math.max(0, Math.min(slides.length - 1, current() + d));
+    slides[i].scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  // the PDF button shows only once a PDF has been added beside this page
+  fetch('stone-bird-pitch.pdf', {method:'HEAD'}).then(r => { if (r.ok) document.getElementById('pdf').hidden = false; }).catch(() => {});
+</script>
+</body>
+</html>
